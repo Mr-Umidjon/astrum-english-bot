@@ -10,11 +10,6 @@ from keyboards.default.navigate_workbook_keyboard import menu_navigate_workbook
 from loader import dp
 
 
-@dp.message_handler(Command('menu'))
-async def show_menu(message: Message):
-    await message.answer('Menu', reply_markup=menu)
-
-
 @dp.message_handler(text='📕 Headway Student\'s book Audios')
 async def show_menu_headway_student(message: Message):
     await message.answer('📕 Headway Student\'s book Audios', reply_markup=menu_headway_student_book)
