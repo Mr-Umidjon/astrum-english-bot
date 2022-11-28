@@ -31,6 +31,7 @@ async def show_menu_navigate_work(message: Message):
 
 
 @dp.message_handler(text='Go Back')
+@dp.message_handler(text='Main Menu')
 async def go_back(message: Message):
     await message.answer("Menu", reply_markup=menu)
 
@@ -66,32 +67,42 @@ async def show_headway_student_advanced_units(message: Message):
     await message.answer('Units', reply_markup=menu_headway_student_book_levels['menu_hsba_units'])
 
 
+@dp.message_handler(text='Go Back headway student')
+async def go_back(message: Message):
+    await message.answer('student', reply_markup=menu_headway_student_book)
+
+
 # Headway work book
 @dp.message_handler(text="📕 Headway Workbook Beginner")
 async def show_headway_work_beginner_units(message: Message):
-    await message.answer('Units', reply_markup=menu_headway_student_book_levels['menu_hwbb_units'])
+    await message.answer('Units', reply_markup=menu_headway_work_book_levels['menu_hwbb_units'])
 
 
 @dp.message_handler(text='📘 Headway Workbook Elementary')
 async def show_headway_work_elementary_units(message: Message):
-    await message.answer('Units', reply_markup=menu_headway_student_book_levels['menu_hwbe_units'])
+    await message.answer('Units', reply_markup=menu_headway_work_book_levels['menu_hwbe_units'])
 
 
 @dp.message_handler(text="📙 Headway Workbook Pre-Intermediate")
 async def show_headway_work_pre_units(message: Message):
-    await message.answer('Units', reply_markup=menu_headway_student_book_levels['menu_hwbp_units'])
+    await message.answer('Units', reply_markup=menu_headway_work_book_levels['menu_hwbp_units'])
 
 
 @dp.message_handler(text='📗 Headway Workbook Intermediate')
 async def show_headway_work_inter_units(message: Message):
-    await message.answer('Units', reply_markup=menu_headway_student_book_levels['menu_hwbi_units'])
+    await message.answer('Units', reply_markup=menu_headway_work_book_levels['menu_hwbi_units'])
 
 
 @dp.message_handler(text="📓 Headway Workbook Upper-Intermediate")
 async def show_headway_work_upper_units(message: Message):
-    await message.answer('Units', reply_markup=menu_headway_student_book_levels['menu_hwbu_units'])
+    await message.answer('Units', reply_markup=menu_headway_work_book_levels['menu_hwbu_units'])
 
 
 @dp.message_handler(text='📔 Headway Workbook Advanced')
 async def show_headway_work_advanced_units(message: Message):
-    await message.answer('Units', reply_markup=menu_headway_student_book_levels['menu_hwba_units'])
+    await message.answer('Units', reply_markup=menu_headway_work_book_levels['menu_hwba_units'])
+
+
+@dp.message_handler(text='Go Back headway workbook')
+async def go_back(message: Message):
+    await message.answer('work', reply_markup=menu_headway_workbook)
