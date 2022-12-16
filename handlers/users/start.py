@@ -1,5 +1,5 @@
 from aiogram import types
-from aiogram.dispatcher.filters.builtin import CommandStart, Command
+from aiogram.dispatcher.filters.builtin import CommandStart
 
 from keyboards.default.menu_keyboard import main_menu_keyboard
 
