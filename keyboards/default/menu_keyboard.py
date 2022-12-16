@@ -13,25 +13,12 @@ main_menu_keyboard = ReplyKeyboardMarkup(
 books_menu_keyboard = ReplyKeyboardMarkup(
     keyboard=[
         [
-            KeyboardButton(text='📕 Headway'),
-        ]
-        ,
-        [
-            KeyboardButton("🏠 Go back to menu")
-        ]
-    ],
-    resize_keyboard=True
-)
-
-headway_menu_keyboard = ReplyKeyboardMarkup(
-    keyboard=[
-        [
-            KeyboardButton(text="📕Student Beginner"),
-            KeyboardButton(text='📘Student Elementary'),
+            KeyboardButton(text="📕 Student Beginner"),
+            KeyboardButton(text='📘 Student Elementary'),
         ],
         [
-            KeyboardButton(text="📙Student Pre-Intermediate"),
-            KeyboardButton(text='📗Student Intermediate'),
+            KeyboardButton(text="📙 Student Pre-Intermediate"),
+            KeyboardButton(text='📗 Student Intermediate'),
         ],
         [
             KeyboardButton(text="📓 Student Upper-Intermediate"),
@@ -50,9 +37,6 @@ headway_menu_keyboard = ReplyKeyboardMarkup(
             KeyboardButton(text='📔 Work Advanced'),
         ],
         [
-            KeyboardButton(text='🔙 Go back')
-        ],
-        [
             KeyboardButton(text="🏠 Go back to menu")
         ],
     ],
@@ -63,5 +47,5 @@ unit_keyboard = ReplyKeyboardMarkup(row_width=1)
 
 for i in range(1, 13):
     unit_keyboard.insert(KeyboardButton(text=f"Unit {i}"))
-unit_keyboard.insert(KeyboardButton(text='◀️ Go back'))
+unit_keyboard.insert(KeyboardButton(text='🔙 Go back'))
 unit_keyboard.insert(KeyboardButton(text="🏠 Go back to menu"))
