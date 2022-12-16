@@ -39,8 +39,11 @@ levels_menu_keyboard = ReplyKeyboardMarkup(
             KeyboardButton(text='📔 Advanced'),
         ],
         [
-            KeyboardButton(text='Go Back')
-        ]
+            KeyboardButton(text='🔙 Go back')
+        ],
+        [
+            KeyboardButton("🏠 Go back to menu")
+        ],
     ],
     resize_keyboard=True
 )
