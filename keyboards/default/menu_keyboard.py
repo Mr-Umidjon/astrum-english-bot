@@ -53,8 +53,15 @@ headway_menu_keyboard = ReplyKeyboardMarkup(
             KeyboardButton(text='🔙 Go back')
         ],
         [
-            KeyboardButton("🏠 Go back to menu")
+            KeyboardButton(text="🏠 Go back to menu")
         ],
     ],
     resize_keyboard=True
 )
+
+unit_keyboard = ReplyKeyboardMarkup(row_width=1)
+
+for i in range(1, 13):
+    unit_keyboard.insert(KeyboardButton(text=f"Unit {i}"))
+unit_keyboard.insert(KeyboardButton(text='◀️ Go back'))
+unit_keyboard.insert(KeyboardButton(text="🏠 Go back to menu"))
