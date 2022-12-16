@@ -13,8 +13,7 @@ main_menu_keyboard = ReplyKeyboardMarkup(
 books_menu_keyboard = ReplyKeyboardMarkup(
     keyboard=[
         [
-            KeyboardButton(text='📕 Headway Student\'s books'),
-            KeyboardButton(text='📘 Headway Work books'),
+            KeyboardButton(text='📕 Headway'),
         ]
         ,
         [
@@ -24,19 +23,31 @@ books_menu_keyboard = ReplyKeyboardMarkup(
     resize_keyboard=True
 )
 
-levels_menu_keyboard = ReplyKeyboardMarkup(
+headway_menu_keyboard = ReplyKeyboardMarkup(
     keyboard=[
         [
-            KeyboardButton(text="📕 Beginner"),
-            KeyboardButton(text='📘 Elementary'),
+            KeyboardButton(text="📕Student Beginner"),
+            KeyboardButton(text='📘Student Elementary'),
         ],
         [
-            KeyboardButton(text="📙 Pre-Intermediate"),
-            KeyboardButton(text='📗 Intermediate'),
+            KeyboardButton(text="📙Student Pre-Intermediate"),
+            KeyboardButton(text='📗Student Intermediate'),
         ],
         [
-            KeyboardButton(text="📓 Upper-Intermediate"),
-            KeyboardButton(text='📔 Advanced'),
+            KeyboardButton(text="📓 Student Upper-Intermediate"),
+            KeyboardButton(text='📔 Student Advanced'),
+        ],
+        [
+            KeyboardButton(text="📕 Work Beginner"),
+            KeyboardButton(text='📘 Work Elementary'),
+        ],
+        [
+            KeyboardButton(text="📙 Work Pre-Intermediate"),
+            KeyboardButton(text='📗 Work Intermediate'),
+        ],
+        [
+            KeyboardButton(text="📓 Work Upper-Intermediate"),
+            KeyboardButton(text='📔 Work Advanced'),
         ],
         [
             KeyboardButton(text='🔙 Go back')
